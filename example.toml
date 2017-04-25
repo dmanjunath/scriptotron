@@ -1,0 +1,29 @@
+# shell command you want to run
+command = "node ~/Documents/script.js"
+
+# OPTIONAL - output all the logs to a logfile
+logfile = "out.log"
+
+# excludeErrorKeywords is an array of keywords that you don't want to mark as errors 
+# example usage is if you have known errors you want to fail silently
+excludeErrorKeywords = ["known error:"]
+
+# includeErrorKeywords is an array of keywords which doesn't actually log a stderr message but
+# want to be notified when something happens
+# example usage is if you have a log statement which doesn't indicate an error, but you want to be alerted about it anyway
+includeErrorKeywords = ["ERROR:"]
+
+# what actions to take in the event of a notification, you can include 0..n number of actions
+actions = ["gmail", "twilio"]
+
+# gmail action configuration
+[gmail]
+email = "email@gmail.com"
+password = "password"
+
+# twilio sms action configuration
+[twilio]
+accountSid = "abcd123"
+authToken = "abcd123"
+toPhoneNumber = "9541268755"
+fromPhoneNumber = "96541356841"
