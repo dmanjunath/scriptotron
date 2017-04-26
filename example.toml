@@ -16,7 +16,8 @@ includeErrorKeywords = ["ERROR:"]
 # what actions to take in the event of a notification, you can include 0..n number of actions
 actions = ["gmail", "twilio"]
 
-# gmail action configuration
+# gmail action
+# gmail needs a configuration change to allow less secure apps https://myaccount.google.com/lesssecureapps
 [gmail]
 email = "email@gmail.com"
 password = "password"

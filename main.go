@@ -103,7 +103,7 @@ func performAction(actionType string, logText string){
     }
     if actionType == "gmail" {
         // TODO need to implement gmail action
-        fmt.Println("gmail!!!")
+        sendEmail(logText)
     }
 }
 

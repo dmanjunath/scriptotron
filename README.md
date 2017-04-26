@@ -4,7 +4,7 @@ It's a configurable script runner that can also notify you when you have errors 
 
 # Why?
 
-Sometimes I need to execute long running scripts, but I dont want to be in front of my computer for hours at a time staring at the screen. At the same time, I don't want to have to litter my code with custom calls to raygun or rollbar or some other monitoring service to be notified of crashes. I want a script runner which can do all of the above for me with no code changes whatsoever.
+Sometimes I need to execute long running scripts, but I dont want to be in front of my computer for hours at a time staring at the screen. At the same time, I don't want to have to litter my code with custom calls to raygun or rollbar or another monitoring service to be notified of crashes. I want a script runner which can do all of the above for me with no code changes whatsoever.
 
 # How does it work?
 
@@ -17,8 +17,12 @@ You can download the pre built packages from the releases section, or you can ge
 go build
 ```
 
-To run, pass in the configuration file to the executable
+To run, rename the example.toml to config.toml, and in the same folder level as config.toml run:
 
-```go
-./scriptotron
+```shell
+./bin/scriptotron
 ```
+
+# What if Gmail isn't working?
+
+In order to use gmail to send emails, you need to change the configuration to allow less secure apps here https://myaccount.google.com/lesssecureapps
